@@ -1,117 +1,73 @@
-                                                                                                @media only screen and (max-width: 700px) {
-                                                                                                .responsive {
-                                                                                                    width: 49.99999%;
-                                                                                                    margin: 6px 0;
-                                                                                                }
-                                                                                            }
-                                                                                            
-                                                                                            @media only screen and (max-width: 500px) {
-                                                                                                .responsive {
-                                                                                                    width: 100%;
-                                                                                                }
-                                                                                            }
-                                                                                            
-                                                                                            body {
-                                                                                                font-family: "Helvetica";
-                                                                                                font-weight: bold;
-                                                                                                background: #000;
-                                                                                                color: #ccc;
-                                                                                            }
-                                                                                            
-                                                                                            h1 {
-                                                                                                text-align: center;
-                                                                                                font-weight: normal;
-                                                                                                font-size: 50px;
-                                                                                                align-self: auto;
-                                                                                                font-family: 'Open Sans Condensed', sans-serif;
-                                                                                            }
-                                                                                            
-                                                                                            .container {
-                                                                                                display: flex;
-                                                                                                flex-direction: row;
-                                                                                                align-items: center;
-                                                                                                justify-content: center;
-                                                                                            }
-                                                                                            
-                                                                                            .gallery {
-                                                                                                border: 1px solid red;
-                                                                                            }
-                                                                                            
-                                                                                            div.gallery img:hover {
-                                                                                                background-color: yellow;
-                                                                                                transform: perspective(700px) scale(1.5);
-                                                                                                transform-origin: center center;
-                                                                                            }
-                                                                                            
-                                                                                            div.gallery {
-                                                                                                display: flex;
-                                                                                                margin: 100px;
-                                                                                                border: 1px solid #ccc;
-                                                                                                width: 100px;
-                                                                                                height: 100px;
-                                                                                            }
-                                                                                            
-                                                                                            div.gallery img {
-                                                                                                display: flex;
-                                                                                                flex-direction: row;
-                                                                                                width: 150%;
-                                                                                                height: 150%;
-                                                                                                border: 1px solid black;
-                                                                                                background-color: lightblue;
-                                                                                                padding-top: 5px;
-                                                                                                padding-right: 5px;
-                                                                                                padding-bottom: 5px;
-                                                                                                padding-left: 5px;
-                                                                                            }
-                                                                                            
-                                                                                            div.desc {
-                                                                                                padding: 5px;
-                                                                                                text-align: center;
-                                                                                                color: tan;
-                                                                                                font-family: 'IBM Plex Sans Condensed', sans-serif;
-                                                                                                font-family: 'Open Sans Condensed', sans-serif;
-                                                                                                padding: 15px;
-                                                                                                font-size: 26px;
-                                                                                            }
-                                                                                            
-                                                                                            div.mini {
-                                                                                                padding: 5px;
-                                                                                                text-align: center;
-                                                                                                font-size: small;
-                                                                                                color: seashell;
-                                                                                                font-size: 100%;
-                                                                                                font-family: 'IBM Plex Sans Condensed', sans-serif;
-                                                                                                font-family: 'Open Sans Condensed', sans-serif;
-                                                                                            }
-                                                                                            
-                                                                                            .material-icons {
-                                                                                                width: 1px;
-                                                                                                height: 1px;
-                                                                                                flex: auto;
-                                                                                                justify-items: auto;
-                                                                                                padding: 6px 15px;
-                                                                                            }
-                                                                                            
-                                                                                            .material-icons:hover {
-                                                                                                transform: transform: perspective(700px) scale(1.5);
-                                                                                                transform-origin: center center;
-                                                                                                color: #bhbhbh;
-                                                                                                width: 100px;
-                                                                                                height: 100px;
-                                                                                                position: relative;
-                                                                                                animation-name: example;
-                                                                                                animation-duration: 4s;
-                                                                                                animation-iteration-count: 3;
-                                                                                            }
-                                                                                            
-                                                                                            .material-icons:hover {
-                                                                                                animation: 0.5s ease 1 normal hello;
-                                                                                            }
-                                                                                            
-                                                                                            @keyframes hello {
-                                                                                                from {
-                                                                                                    transform: scale(1.0);
-                                                                                                }
-                                                                                                to {
-                                                                                                    transform: scale(5.2);
-                                                                                                }
+                                                                                * {
+                                                                                    align-content: center;
+                                                                                    background-color: #dbe1e2;
+                                                                                    margin: 50px;
+                                                                                }
+                                                                                
+                                                                                .gallery img {
+                                                                                    max-width: 550px;
+                                                                                }
+                                                                                
+                                                                                .gallery img:hover {
+                                                                                    transform: rotate(180deg) perspective(700px);
+                                                                                    transform-origin: center center;
+                                                                                }
+                                                                                
+                                                                                section {
+                                                                                    align-content: center;
+                                                                                    max-width: 100%;
+                                                                                }
+                                                                                
+                                                                                h1 {
+                                                                                    size: 200px;
+                                                                                    color: rgb(32, 47, 49);
+                                                                                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                                                                                    text-align: center;
+                                                                                }
+                                                                                
+                                                                                .desc {
+                                                                                    font-size: 25px;
+                                                                                    color: rgb(113, 103, 122);
+                                                                                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                                                                                }
+                                                                                
+                                                                                .mini {
+                                                                                    font-size: 15px;
+                                                                                    color: rgb(5, 77, 43);
+                                                                                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                                                                                }
+                                                                                
+                                                                                .material-icons {
+                                                                                    align-content: center;
+                                                                                }
+                                                                                
+                                                                                .material-icons:hover {
+                                                                                    transform: perspective(700px);
+                                                                                    transform-origin: center 71% 180px;
+                                                                                }
+                                                                                
+                                                                                .material-icons:hover {
+                                                                                    animation: 0.5s ease 1 normal hello;
+                                                                                }
+                                                                                
+                                                                                @keyframes hello {
+                                                                                    from {
+                                                                                        transform: scale(1.0);
+                                                                                    }
+                                                                                    to {
+                                                                                        transform: scale(5.2);
+                                                                                    }
+                                                                                }
+                                                                                /* -- MEDIA QUERIES -----*/
+                                                                                
+                                                                                @media only screen and (max-width: 700px) {
+                                                                                    background {
+                                                                                        background-color: #000000;
+                                                                                    }
+                                                                                }
+                                                                                
+                                                                                @media only screen and (max-width: 500px) {
+                                                                                    .responsive {
+                                                                                        width: 100%;
+                                                                                    }
+                                                                                }
