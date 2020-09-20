@@ -1,73 +1,68 @@
-                                                                                * {
-                                                                                    align-content: center;
-                                                                                    background-color: #dbe1e2;
-                                                                                    margin: 50px;
-                                                                                }
-                                                                                
-                                                                                .gallery img {
-                                                                                    max-width: 550px;
-                                                                                }
-                                                                                
-                                                                                .gallery img:hover {
-                                                                                    transform: rotate(180deg) perspective(700px);
-                                                                                    transform-origin: center center;
-                                                                                }
-                                                                                
-                                                                                section {
-                                                                                    align-content: center;
-                                                                                    max-width: 100%;
-                                                                                }
-                                                                                
-                                                                                h1 {
-                                                                                    size: 200px;
-                                                                                    color: rgb(32, 47, 49);
-                                                                                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                                                                                    text-align: center;
-                                                                                }
-                                                                                
-                                                                                .desc {
-                                                                                    font-size: 25px;
-                                                                                    color: rgb(113, 103, 122);
-                                                                                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                                                                                }
-                                                                                
-                                                                                .mini {
-                                                                                    font-size: 15px;
-                                                                                    color: rgb(5, 77, 43);
-                                                                                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                                                                                }
-                                                                                
-                                                                                .material-icons {
-                                                                                    align-content: center;
-                                                                                }
-                                                                                
-                                                                                .material-icons:hover {
-                                                                                    transform: perspective(700px);
-                                                                                    transform-origin: center 71% 180px;
-                                                                                }
-                                                                                
-                                                                                .material-icons:hover {
-                                                                                    animation: 0.5s ease 1 normal hello;
-                                                                                }
-                                                                                
-                                                                                @keyframes hello {
-                                                                                    from {
-                                                                                        transform: scale(1.0);
-                                                                                    }
-                                                                                    to {
-                                                                                        transform: scale(5.2);
-                                                                                    }
-                                                                                }
-                                                                                /* -- MEDIA QUERIES -----*/
-                                                                                
-                                                                                @media only screen and (max-width: 700px) {
-                                                                                    background {
-                                                                                        background-color: #000000;
-                                                                                    }
-                                                                                }
-                                                                                
-                                                                                @media only screen and (max-width: 500px) {
-                                                                                    .responsive {
-                                                                                        width: 100%;
-                                                                                    }
-                                                                                }
+              * {
+      align-content: center;
+      background-color: #dbe1e2;
+      margin: 50px;
+  }
+  
+  .gallery img {
+      max-width: 550px;
+  }
+  
+  .gallery img:hover {
+      transform: rotate(180deg) perspective(700px);
+      transform-origin: center center;
+  }
+  
+  section {
+      align-content: center;
+      max-width: 100%;
+  }
+  
+  h1 {
+      size: 200px;
+      color: rgb(32, 47, 49);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-align: center;
+  }
+  
+  .desc {
+      font-size: 25px;
+      color: rgb(113, 103, 122);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .mini {
+      font-size: 15px;
+      color: rgb(5, 77, 43);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .material-icons {
+      align-content: center;
+  }
+  
+  .material-icons:hover {
+      transform: perspective(700px);
+      transform-origin: center 71% 180px;
+  }
+  
+  .material-icons:hover {
+      animation: 0.5s ease 1 normal hello;
+  }
+  
+  @keyframes hello {
+      from {
+          transform: scale(1.0);
+      }
+      to {
+          transform: scale(5.2);
+      }
+      /* -- MEDIA QUERIES -----*/
+      @media only screen and (max-width: 700px) {
+          background {
+              background-color: #000000;
+          }
+          @media only screen and (max-width: 500px) {
+              .responsive {
+                  width: 100%;
+              }
