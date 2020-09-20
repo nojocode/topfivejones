@@ -1,68 +1,115 @@
-              * {
-      align-content: center;
-      background-color: #dbe1e2;
-      margin: 50px;
-  }
-  
-  .gallery img {
-      max-width: 550px;
-  }
-  
-  .gallery img:hover {
-      transform: rotate(180deg) perspective(700px);
-      transform-origin: center center;
-  }
-  
-  section {
-      align-content: center;
-      max-width: 100%;
-  }
-  
-  h1 {
-      size: 200px;
-      color: rgb(32, 47, 49);
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      text-align: center;
-  }
-  
-  .desc {
-      font-size: 25px;
-      color: rgb(113, 103, 122);
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  
-  .mini {
-      font-size: 15px;
-      color: rgb(5, 77, 43);
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  }
-  
-  .material-icons {
-      align-content: center;
-  }
-  
-  .material-icons:hover {
-      transform: perspective(700px);
-      transform-origin: center 71% 180px;
-  }
-  
-  .material-icons:hover {
-      animation: 0.5s ease 1 normal hello;
-  }
-  
-  @keyframes hello {
-      from {
-          transform: scale(1.0);
-      }
-      to {
-          transform: scale(5.2);
-      }
-      /* -- MEDIA QUERIES -----*/
-      @media only screen and (max-width: 700px) {
-          background {
-              background-color: #000000;
-          }
-          @media only screen and (max-width: 500px) {
-              .responsive {
-                  width: 100%;
-              }
+            * {
+    background-color: #dbe1e2;
+    margin: 50px;
+}
+
+.container {
+    width: 10px;
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.row {
+    display: flex;
+}
+
+.gallery img {
+    max-width: 550px;
+}
+
+.gallery img:hover {
+    transform: rotate(180deg) perspective(700px);
+    transform-origin: center center;
+}
+
+.gallery img:hover+.material-icons {
+    transform-origin: center center;
+    opacity: opacity: 1.0;
+}
+
+.gallery img:hover+.desc {
+    transform-origin: center center;
+    opacity: 1.0;
+}
+
+.gallery img:hover+.mini {
+    transform-origin: center center;
+    opacity: 100;
+}
+
+
+/* Title for gallery */
+
+h1 {
+    size: 200px;
+    color: rgb(32, 47, 49);
+    font-family: Cambria, Cochin, ;
+    text-align: center;
+    transition: background-color 0.5s ease;
+    background-color: white;
+}
+
+h1:hover {
+    background-color: green;
+}
+
+
+/* description */
+
+.desc {
+    font-size: 25px;
+    color: rgb(113, 103, 122);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity: 0;
+}
+
+
+/* title */
+
+.mini {
+    opacity: 0;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Icons */
+
+.material-icons {
+    align-content: center;
+    opacity: 0;
+}
+
+.material-icons:hover {
+    opacity: 100;
+    transform: perspective(700px);
+    transform-origin: center 71% 180px;
+}
+
+.material-icons:hover {
+    animation: 0.5s ease 1 normal hello;
+}
+
+@keyframes hello {
+    from {
+        transform: scale(1.0);
+    }
+    to {
+        transform: scale(5.2);
+    }
+    /* -- MEDIA QUERIES -----*/
+    @media only screen and (max-width: 700px) {
+        background {
+            background-color: #000000;
+        }
+        @media only screen and (max-width: 500px) {
+            .responsive {
+                width: 100%;
+            }
+            @media only screen and (max-width: 900px) {
+                .container {
+                    flexbox: display;
+                    max-width: 50%;
+                }
+            }
